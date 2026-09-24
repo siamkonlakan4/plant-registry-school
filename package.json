@@ -1,0 +1,36 @@
+{
+  "name": "plant-registry-school",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "lint": "eslint .",
+    "test": "node --test tests/*.test.mjs",
+    "setup:local": "node scripts/setup-local.mjs",
+    "setup:google": "node scripts/setup-google-resources.mjs",
+    "setup:seed": "node scripts/seed-demo-data.mjs",
+    "setup:all": "node scripts/setup-local.mjs --all",
+    "gas:login": "clasp login",
+    "gas:create": "node scripts/create-appsscript-project.mjs",
+    "gas:push": "node scripts/push-gas.mjs",
+    "gas:deploy": "node scripts/deploy-gas.mjs",
+    "verify": "node scripts/verify-deployment.mjs",
+    "deploy:pages": "npm run build && echo 'Push main; GitHub Actions publishes dist.'"
+  },
+  "dependencies": {
+    "html-to-image": "^1.11.13",
+    "jspdf": "^3.0.1",
+    "konva": "^9.3.22",
+    "lucide": "^0.468.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@google/clasp": "^3.0.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.0.0",
+    "vite": "^7.0.0"
+  }
+}

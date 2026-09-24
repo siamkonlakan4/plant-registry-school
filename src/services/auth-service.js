@@ -1,0 +1,1 @@
+let credential='',user=null;export const auth={get token(){return credential},get user(){return user},setToken(token){credential=token},set(token,u){credential=token;user=u;window.dispatchEvent(new Event('authchange'))},clear(){credential='';user=null;window.dispatchEvent(new Event('authchange'))}};

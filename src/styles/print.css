@@ -1,0 +1,1 @@
+@media print{@page{size:A4;margin:3mm}body{background:white}header,footer,.section>.panel,.section-head,.section>a,.pagination,.detail .back,.qr-box button,#toast{display:none!important}.section{padding:0;margin:0}.label-pages{padding:0;gap:4mm}.print-label{break-inside:avoid;border:1px dashed #bbb}.detail{margin:0}.detail-grid{gap:1rem}.detail-photo{height:90mm}}

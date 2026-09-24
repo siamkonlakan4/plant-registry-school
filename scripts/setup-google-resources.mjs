@@ -1,0 +1,1 @@
+console.log('ไม่ต้องใช้ Google Cloud: เปิด Apps Script editor → Project Settings → Script Properties → ใส่ ADMIN_EMAIL, STAFF_DOMAIN, FRONTEND_URL → เลือก bootstrapSystem → Run → อนุญาตสิทธิ์ด้วยบัญชีเจ้าของ');

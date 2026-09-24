@@ -1,0 +1,1 @@
+function audit(action,type,id,user,before,after,meta){append('Activity_Log',{log_id:uid('LOG'),action,entity_type:type,entity_id:id,user_email:user?.email||'system',user_name:user?.full_name||'system',action_at:now(),before_json:JSON.stringify(before||{}).slice(0,20000),after_json:JSON.stringify(after||{}).slice(0,20000),metadata_json:JSON.stringify(meta||{})})}

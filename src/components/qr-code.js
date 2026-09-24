@@ -1,0 +1,1 @@
+import QRCode from 'qrcode';export async function qrCanvas(url,size=256){const c=document.createElement('canvas');await QRCode.toCanvas(c,url,{width:size,margin:4,errorCorrectionLevel:'M',color:{dark:'#000000',light:'#FFFFFF'}});return c}

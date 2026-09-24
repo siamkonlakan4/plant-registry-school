@@ -1,0 +1,3 @@
+# Security
+
+เจ้าของ deploy Public Web App (Anyone, Execute as Me) สำหรับรายการเผยแพร่; Admin Web App จำกัด Workspace domain (Execute as Me). Protected `google.script.run`/POST ทุกคำขอตรวจ Session.getActiveUser email ที่ไม่ว่าง, suffix domain ที่กำหนด, Users row active และ role ฝั่งเซิร์ฟเวอร์. ห้ามใช้ Session.getEffectiveUser เพื่อยืนยัน staff. มีการจำกัดอัตราเขียน, LockService, audit, soft delete, ขนาดและ signature ของรูป, sanitize ข้อความ. Public API ไม่คืนอีเมล/file IDs/รายการ draft. ลิงก์รูป Drive ที่เปิดสาธารณะมีสิทธิ์ดูเท่านั้น. เจ้าหน้าที่ไม่ต้องรับสิทธิ์แก้ไข Sheets/Drive โดยตรง. หากนโยบาย Workspace ไม่ส่ง ActiveUser email ระบบ fail closed; ไม่ให้ใช้การส่งอีเมลจากฟอร์มแทน. อย่าใส่ secret ในตัวแปร VITE_ หรือ repository.

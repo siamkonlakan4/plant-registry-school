@@ -1,0 +1,3 @@
+# Deploy
+
+`npm install && npm run test && npm run build`. Manual Apps Script: สร้าง project ที่ script.google.com → คัดลอก `apps-script/` ทุกไฟล์ → Script Properties `ADMIN_EMAIL`, `ADMIN_NAME`, `STAFF_DOMAIN`, `FRONTEND_URL` → Run `bootstrapSystem`, Run `seedDemoData`. Deploy สอง web apps ด้วย Execute as Me: Public Anyone และ Admin Anyone within domain. ตั้ง `.env` / GitHub repository variables `VITE_FRONTEND_URL`, `VITE_APPS_SCRIPT_URL`, `VITE_ADMIN_URL`, `VITE_ENABLE_DEMO_MODE=false`. GitHub Settings → Pages → GitHub Actions → push main. ทดสอบ public QR และ admin ด้วยบัญชีเจ้าหน้าที่จริง. อัปเดตทั้งสอง deployments ให้ใช้ version ใหม่เมื่อเปลี่ยน backend.

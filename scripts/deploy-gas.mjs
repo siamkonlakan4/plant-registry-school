@@ -1,0 +1,1 @@
+console.log('เพื่อไม่ใช้ Google Cloud: เปิด Apps Script editor → Deploy → New deployment → Web app สองครั้ง');console.log('Public: Execute as Me / Anyone; Admin: Execute as Me / Anyone within your Workspace domain. บันทึก URL ลง VITE_APPS_SCRIPT_URL และ VITE_ADMIN_URL');
